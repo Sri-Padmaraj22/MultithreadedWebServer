@@ -37,6 +37,7 @@ public class Client {
                         toSocket.println("Hello from client side"+socket.getLocalSocketAddress());
                         String line=fromSocket.readLine();
                         System.out.println("Response from Server:"+line);
+                        socket.close();
 
                     }
                     catch(IOException ex)
